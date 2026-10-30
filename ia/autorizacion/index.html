@@ -439,7 +439,7 @@
 (function(){
   /* ============ CONFIGURATION — replace these two values ============ */
   // 1) Your Google Apps Script Web App URL (same deployment used for the terms form).
-  const GOOGLE_SCRIPT_URL = 'PEGA_AQUI_TU_URL_DE_GOOGLE_APPS_SCRIPT';
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyXYb2X3ei1uk03--DBsqQdfElZ74f7pnsr6-G4y7jVfKaPZr3dknuTuQFUceta1XY/exec';
   // 2) Official link to the Política de Tratamiento de Datos Personales.
   const POLITICA_URL = '/politica-de-datos'; // 👈 pega aquí el enlace oficial
   /* ================================================================== */
@@ -854,7 +854,7 @@
     currentRecord = rec;
 
     // Send to Google Sheets + confirmation email (see the Apps Script provided)
-    if(GOOGLE_SCRIPT_URL.indexOf('PEGA_AQUI') === -1){
+    if(GOOGLE_SCRIPT_URL.indexOf('https://script.google.com/macros/s/AKfycbyXYb2X3ei1uk03--DBsqQdfElZ74f7pnsr6-G4y7jVfKaPZr3dknuTuQFUceta1XY/exec') === -1){
       try{
         await fetch(GOOGLE_SCRIPT_URL, {
           method:'POST', mode:'no-cors',
